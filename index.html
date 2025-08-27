@@ -37,7 +37,7 @@
                     src="./assets/coin.png" class="w-[30px]" alt="">
             </div>
             <button
-                class="btn w-[120px] h-[52px] bg-[#00A63E] rounded-[50px] text-[16px] font-semibold text-white hover:bg-[#5C5C5C] "><span>0</span>Copy</button>
+                class="btn w-[120px] h-[52px] bg-[#00A63E] rounded-[50px] text-[16px] font-semibold text-white"><span id="copy-count">0</span>Copy</button>
         </div>
     </nav>
     <main class="bg-[#F5FFF6]">
@@ -57,9 +57,9 @@
         </section>
         <!-- card section start  -->
         <section class="max-w-[90%] grid grid-cols-1 md:grid-cols-12 gap-[30px] mx-auto mt-[48px]">
-            <section class="grid grid-cols-1 md:grid-cols-3 md:col-span-9 gap-[30px]">
+            <section id="card-section-container" class="card-section-container grid grid-cols-1 md:grid-cols-3 md:col-span-9 gap-[30px]">
                 <!-- card 1  -->
-                <div id="card-1"
+                <div
                     class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm ">
                     <div class="w-full p-[30px]">
                         <div class="flex items-center justify-between">
@@ -78,16 +78,15 @@
                             <p class="text-[18px] text-center text-[#5C5C5C]">All</p>
                         </div>
                         <div class="card-actions grid grid-cols-2 mt-[24px]">
-                            <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                            <button class="btn copy-btn bg-white border border-[#D4D6D5] hover:bg-[#5C5C5C] hover:text-white text-[#5C5C5C] rounded-[8px]"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
                             <button class="btn call-btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
                                     class="call-btn fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
-                </div>
                 <!-- card 2  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -107,16 +106,16 @@
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Police</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="btn copy-btn hover:bg-[#5C5C5C] hover:text-white bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card 3  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -136,17 +135,17 @@
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Fire</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="btn copy-btn hover:bg-[#5C5C5C] hover:text-white bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- card 4  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -166,16 +165,16 @@
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Health</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="btn copy-btn hover:bg-[#5C5C5C] hover:text-white bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card 5  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -195,16 +194,16 @@
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Help</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="btn copy-btn hover:bg-[#5C5C5C] hover:text-white bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card 6  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -224,16 +223,16 @@
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Govt.</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="btn copy-btn bg-white border hover:bg-[#5C5C5C] hover:text-white border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card 7  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -247,22 +246,22 @@
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Electricity Helpline</h2>
                             <p class="text-[#5C5C5C] text-[18px] mb-[24px]">Electricity Outage</p>
-                            <h1 class="font-bold text-[32px]">109</h1>
+                            <h1 class="font-bold text-[32px]">16216</h1>
                             <div
                                 class="bg-[#F2F2F2] border-[#D4D6D5] rounded-[100px] h-[37px] w-[150px] flex justify-center items-center">
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Electricity Outage</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="btn copy-btn bg-white hover:bg-[#5C5C5C] hover:text-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card 8  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -278,20 +277,20 @@
                             <p class="text-[#5C5C5C] text-[18px] mb-[24px]">Brac</p>
                             <h1 class="font-bold text-[32px]">16445</h1>
                             <div
-                                class="bg-[#F2F2F2] border-[#D4D6D5] rounded-[100px] h-[37px] w-[110px] flex justify-center items-center">
+                                class="bg-[#F2F2F2]  border-[#D4D6D5] rounded-[100px] h-[37px] w-[110px] flex justify-center items-center">
                                 <p class="text-[18px] text-center text-[#5C5C5C]">NGO</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="copy-btn btn hover:bg-[#5C5C5C] hover:text-white bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone heart-icon"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone heart-icon"></i> Call</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- card - 9  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
+                <div class="card flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm">
                     <div class="w-full p-[30px]">
                         <div class="">
                             <div class="flex items-center justify-between">
@@ -311,10 +310,10 @@
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Travel</p>
                             </div>
                             <div class="card-actions grid grid-cols-2 mt-[24px]">
-                                <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
+                                <button class="copy-btn btn hover:bg-[#5C5C5C] hover:text-white bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
-                                <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone heart-icon"></i> Call</button>
+                                <button class="call-btn btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                        class="call-btn fa-solid fa-phone heart-icon"></i> Call</button>
                             </div>
                         </div>
                     </div>
