@@ -28,11 +28,11 @@
         </div>
         <div class="flex items-center justify-center gap-[20px]">
             <div class="flex bg-[#41FF6B1A] justify-center items-center p-[15px] h-[52px] w-[123px] rounded-[50px]">
-                <span class="text-[16px] font-extrabold mr-[10px]">0</span><img src="./assets/heart.png"
+                <span id="heart-count" class="text-[16px] font-extrabold mr-[10px]">0</span><img src="./assets/heart.png"
                     class="w-[30px]" alt="">
             </div>
             <div class="flex bg-[#41FF6B1A] justify-center items-center p-[15px] h-[52px] w-[106px] rounded-[50px]">
-                <span class="text-[16px] font-extrabold mr-[10px]">100</span><img src="./assets/coin.png"
+                <span id="total-coin" class="text-[16px] font-extrabold mr-[10px]">100</span><img src="./assets/coin.png"
                     class="w-[30px]" alt="">
             </div>
             <button
@@ -58,14 +58,14 @@
         <section class="max-w-[90%] grid grid-cols-1 md:grid-cols-12 gap-[30px] mx-auto mt-[48px]">
             <section class="grid grid-cols-1 md:grid-cols-3 md:col-span-9 gap-[30px]">
                 <!-- card 1  -->
-                <div class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm ">
+                <div id="card-1" class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm ">
                     <div class="w-full p-[30px]">
                         <div class="flex items-center justify-between">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex justify-center items-center rounded-2xl">
                                 <img src="./assets/emergency.png" class="w-[32px] " alt="">
                             </div>
                             <div class="">
-                                <i class="fa-regular fa-heart text-[24px]"></i>
+                                <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                             </div>
                         </div>
                         <h2 class="font-bold text-[24px] mt-[16px]">National Emergency Number</h2>
@@ -78,8 +78,8 @@
                         <div class="card-actions grid grid-cols-2 mt-[24px]">
                             <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                     class="fa-regular fa-copy"></i> Copy</button>
-                            <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                    class="fa-solid fa-phone"></i> Call</button>
+                            <button class="btn call-btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
+                                    class="call-btn fa-solid fa-phone"></i> Call</button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@
                                     <img src="./assets/police.png" class="w-[32px] " alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Police Helpline Number</h2>
@@ -123,7 +123,7 @@
                                     <img src="./assets/police.png" class="w-[32px] " alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Fire Service Number</h2>
@@ -153,7 +153,7 @@
                                     <img src="./assets/ambulance.png" class="w-[32px] " alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Ambulance Service</h2>
@@ -182,7 +182,7 @@
                                     <img src="./assets/emergency.png" class="w-[32px] " alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Women & Child Helpline</h2>
@@ -211,7 +211,7 @@
                                     <img src="./assets/coin.png" class="w-[32px] " alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Anti-Corruption Helpline</h2>
@@ -240,7 +240,7 @@
                                     <img src="./assets/emergency.png" class="w-[32px]" alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Electricity Helpline</h2>
@@ -269,7 +269,7 @@
                                     <img src="./assets/brac.png" class="w-[32px]" alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Brac Helpline. hsbssk</h2>
@@ -283,7 +283,7 @@
                                 <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
                                 <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                        class="fa-solid fa-phone heart-icon"></i> Call</button>
                             </div>
                         </div>
                     </div>
@@ -298,7 +298,7 @@
                                     <img src="./assets/Bangladesh-Railway.png" class="w-[32px]" alt="">
                                 </div>
                                 <div class="">
-                                    <i class="fa-regular fa-heart text-[24px]"></i>
+                                    <i class="fa-regular fa-heart text-[24px] heart-icon"></i>
                                 </div>
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Bangladesh Railway Helpline</h2>
@@ -312,7 +312,7 @@
                                 <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
                                 <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone"></i> Call</button>
+                                        class="fa-solid fa-phone heart-icon" ></i> Call</button>
                             </div>
                         </div>
                     </div>
