@@ -17,7 +17,8 @@
 
 <body>
     <!-- nav section start -->
-    <nav class="flex flex-col md:flex-row items-center justify-between my-[20px] mb-5 md:my-[0px] w-[90%] mx-auto md:h-[100px] gap-3 md:gap-0">
+    <nav
+        class="flex flex-col md:flex-row items-center justify-between my-[20px] mb-5 md:my-[0px] w-[90%] mx-auto md:h-[100px] gap-3 md:gap-0">
         <div class="flex items-center">
             <img src="./assets/logo.png" class="w-[50px] mr-[10px]" alt="">
 
@@ -28,12 +29,12 @@
         </div>
         <div class="flex items-center justify-center gap-[20px]">
             <div class="flex bg-[#41FF6B1A] justify-center items-center p-[15px] h-[52px] w-[123px] rounded-[50px]">
-                <span id="heart-count" class="text-[16px] font-extrabold mr-[10px]">0</span><img src="./assets/heart.png"
-                    class="w-[30px]" alt="">
+                <span id="heart-count" class="text-[16px] font-extrabold mr-[10px]">0</span><img
+                    src="./assets/heart.png" class="w-[30px]" alt="">
             </div>
             <div class="flex bg-[#41FF6B1A] justify-center items-center p-[15px] h-[52px] w-[106px] rounded-[50px]">
-                <span id="total-coin" class="text-[16px] font-extrabold mr-[10px]">100</span><img src="./assets/coin.png"
-                    class="w-[30px]" alt="">
+                <span id="total-coin" class="text-[16px] font-extrabold mr-[10px]">100</span><img
+                    src="./assets/coin.png" class="w-[30px]" alt="">
             </div>
             <button
                 class="btn w-[120px] h-[52px] bg-[#00A63E] rounded-[50px] text-[16px] font-semibold text-white hover:bg-[#5C5C5C] "><span>0</span>Copy</button>
@@ -58,7 +59,8 @@
         <section class="max-w-[90%] grid grid-cols-1 md:grid-cols-12 gap-[30px] mx-auto mt-[48px]">
             <section class="grid grid-cols-1 md:grid-cols-3 md:col-span-9 gap-[30px]">
                 <!-- card 1  -->
-                <div id="card-1" class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm ">
+                <div id="card-1"
+                    class="flex justify-center items-center  bg-white rounded-[12px] bg-base-100 shadow-sm ">
                     <div class="w-full p-[30px]">
                         <div class="flex items-center justify-between">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] flex justify-center items-center rounded-2xl">
@@ -216,7 +218,7 @@
                             </div>
                             <h2 class="font-bold text-[24px] mt-[16px]">Anti-Corruption Helpline</h2>
                             <p class="text-[#5C5C5C] text-[18px] mb-[24px]">Anti-Corruption</p>
-                            <h1 class="font-bold text-[32px]">109</h1>
+                            <h1 class="font-bold text-[32px]">106</h1>
                             <div
                                 class="bg-[#F2F2F2] border-[#D4D6D5] rounded-[100px] h-[37px] w-[110px] flex justify-center items-center">
                                 <p class="text-[18px] text-center text-[#5C5C5C]">Govt.</p>
@@ -312,7 +314,7 @@
                                 <button class="btn bg-white border border-[#D4D6D5] text-[#5C5C5C] rounded-[8px]"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
                                 <button class="btn rounded-[8px] bg-[#00A63E] text-white hover:bg-[#5C5C5C]"><i
-                                        class="fa-solid fa-phone heart-icon" ></i> Call</button>
+                                        class="fa-solid fa-phone heart-icon"></i> Call</button>
                             </div>
                         </div>
                     </div>
@@ -323,27 +325,9 @@
                 <div class="flex justify-between items-center mb-[10px]">
                     <h1 class="font-medium text-[20px]"><i class="fa-regular fa-clock"></i> Call History</h1>
                     <button
-                        class="btn w-[114px] h-[52px] bg-[#00A63E] rounded-[50px] text-[16px] font-semibold text-white hover:bg-[#5C5C5C]">Clear</button>
+                      id="clear-btn" type="button"  class="btn w-[114px] h-[52px] bg-[#00A63E] rounded-[50px] text-[16px] font-semibold text-white hover:bg-[#5C5C5C] ">Clear</button>
                 </div>
-                <div class="bg-[#FAFAFA] rounded-[8px] p-[16px] flex justify-between items-center">
-                    <div>
-                        <h1 class="font-semibold text-[18px]">Fire Service Number</h1>
-                        <h1 class="text-[#5C5C5C] text-[18px]">999</h1>
-                    </div>
-                    <div>
-                        <p>11:36:58 AM</p>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="bg-[#FAFAFA] rounded-[8px] p-[16px] flex justify-between items-center mt-[8px]">
-                        <div>
-                            <h1 class="font-semibold text-[18px]">Fire Service Number</h1>
-                            <h1 class="text-[#5C5C5C] text-[18px]">999</h1>
-                        </div>
-                        <div>
-                            <p>11:36:58 AM</p>
-                        </div>
-                    </div>
+                <div id="history-container">
                 </div>
             </aside>
         </section>
@@ -351,4 +335,5 @@
 
     <script src="./script/index.js"></script>
 </body>
+
 </html>
